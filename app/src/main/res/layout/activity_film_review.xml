@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient5"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvUploadFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Review of a Film"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <android.widget.Button
+        android:id="@+id/btnChooseFilm"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUploadFilm"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gradient_text_2"
+        android:drawableStart="@drawable/ic_attach_file_color"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Select Poster"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnUploadFilm"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUploadFilm"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/gradient_text_2"
+        android:drawableStart="@drawable/ic_upload_color"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/upload"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChooseFilm"
+        android:layout_marginTop="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".FilmReviewActivity">
+
+            <ImageView
+                android:id="@+id/ivUploadFilm"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:contentDescription="TODO" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameFilm"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNameFilm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name of the Film"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ReviewFilm"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReviewFilm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Review of the Film"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/mainNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:menu="@menu/navigation_menu"
+        app:itemBackground="@drawable/gradient_navigation_bar"
+        app:itemIconTint="@color/navigation_item_color"
+        app:itemTextColor="@color/navigation_item_color">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

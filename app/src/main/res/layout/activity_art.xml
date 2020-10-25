@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient5">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvUploadArt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Upload your ArtWork"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <android.widget.Button
+        android:id="@+id/btnChooseArt"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUploadArt"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gradient_text_2"
+        android:drawableStart="@drawable/ic_attach_file_color"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="Select Image"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnUploadArt"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUploadArt"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/gradient_text_2"
+        android:drawableStart="@drawable/ic_upload_color"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/upload"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChooseArt"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            tools:context=".ArtActivity">
+
+            <ImageView
+                android:id="@+id/ivUploadArt"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:contentDescription="TODO" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CaptionArt"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCaptionArt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Caption"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/mainNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:menu="@menu/navigation_menu"
+        app:itemBackground="@drawable/gradient_navigation_bar"
+        app:itemIconTint="@color/navigation_item_color"
+        app:itemTextColor="@color/navigation_item_color">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

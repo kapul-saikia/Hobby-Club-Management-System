@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "199819576014",
+    "firebase_url": "https://hobby-club.firebaseio.com",
+    "project_id": "hobby-club",
+    "storage_bucket": "hobby-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199819576014:android:1b62de460c5e6aa778469f",
+        "android_client_info": {
+          "package_name": "com.kapul.hobbyclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199819576014-7rmlotbk0jv1qftjg8jpvvhu4sj7oa01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnl70fZV9u9HClG98pyQiHXB9Kc_j9AMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199819576014-7rmlotbk0jv1qftjg8jpvvhu4sj7oa01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

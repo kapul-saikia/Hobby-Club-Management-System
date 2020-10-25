@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5">
+
+    <TextView
+        android:id="@+id/tvUploadBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Review of a Book"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <android.widget.Button
+        android:id="@+id/btnChooseBook"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUploadBook"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gradient_text_2"
+        android:drawableStart="@drawable/ic_attach_file_color"
+        android:paddingHorizontal="10dp"
+        android:layout_marginStart="8dp"
+        android:text="Select Cover"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnUploadBook"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUploadBook"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/gradient_text_2"
+        android:drawableStart="@drawable/ic_upload_color"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingHorizontal="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/upload"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChooseBook"
+        android:layout_above="@id/mainNavigation"
+        android:layout_marginTop="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/ivUploadBook"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:contentDescription="TODO" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameBook"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNameBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name of the book"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ReviewBook"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReviewBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Review of the book"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/mainNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:menu="@menu/navigation_menu"
+        app:itemBackground="@drawable/gradient_navigation_bar"
+        app:itemIconTint="@color/navigation_item_color"
+        app:itemTextColor="@color/navigation_item_color">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

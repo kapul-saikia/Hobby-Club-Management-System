@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/admin_bg"
+    tools:context=".AdminAstronomyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Hello"
+        android:textColor="#868FFA"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Admin Panel"
+        android:textColor="#868FFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUpcomingActivities"
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient8">
+
+            <EditText
+                android:id="@+id/etUpcomingActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="Add Upcoming Activities:"
+                android:inputType="textMultiLine"
+                android:textColorHint="#868FFA" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etUpcomingActivity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:textColorHint="#868FFA"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <android.widget.Button
+                android:id="@+id/btnPublish"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/date"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradient_button_theme"
+                android:text="Publish" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewManage"
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient8">
+
+            <TextView
+                android:id="@+id/tvManage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:text="Manage Users"
+                android:textColor="#1121E4"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tvSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tvManage"
+                android:drawableStart="@drawable/ic_signout"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:text="SignOut"
+                android:textColor="#1121E4"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

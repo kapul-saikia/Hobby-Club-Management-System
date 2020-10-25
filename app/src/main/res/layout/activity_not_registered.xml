@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_login_bg"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".UserActivity">
+
+
+    <ImageView
+        android:id="@+id/ivNotRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sorry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivNotRegistered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/asar"
+        android:text="Sorry"
+        android:textColor="#F04E33"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+    android:id="@+id/tv2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="0dp"
+    android:fontFamily="@font/asar"
+    android:text="Only registered members can avail this facility.\n Please register as a member of"
+    android:textColor="#F04E33"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvClubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/asar"
+        android:textColor="#F04E33"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <android.widget.Button
+        android:id="@+id/btnRegister"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/gradient_button_theme"
+        android:text="Register"
+        android:textColor="#F04E33" />
+
+    <TextView
+        android:id="@+id/tvAlreadyaMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/asar"
+        android:text="Already a member?"
+        android:textColor="#F04E33"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toEndOf="@+id/tvAlreadyaMember"
+        android:fontFamily="@font/asar"
+        android:text="Login"
+        android:textColor="#F04E33"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Hobby Club</string>
+    <string name="logo">logo</string>
+    <string name="photography_info">The sole aim of TUPC is uniting all the photographers of Tezpur University, so that they could display their art and teach each and everyone.
+                            \n -"photography is an art and not just an act of clicking pics" \n -"the camera does not make the photographer"</string>
+    <string name="adventure_info">\tTezpur University Adventure Sports Club is an organization of the Student Council of Tezpur University, dedicated to the
+                            promotion of adventure sports and nature awareness with the maximum number. Our aim is to provide state of art, safe and thrilling
+                            adventure sports in this evergreen region of India. We are interested in bringing adventure into the lives of the youth specially
+                            those who would otherwise have had no hope of being exposed to it.
+                            \n\t We are committed to provide only Premium events. We are NOT one of those "can do" clubs because, quite frankly, there are some
+                            things we cannot do, and there are other things that just should not be done. We prefer to tell you up front than have you discover it
+                            on the day of the event. So when we say we "can do" something, you can be rest assured it will be done well!</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="account">Account</string>
+    <string name="select">Select</string>
+    <string name="upload">Upload</string>
+    <string name="email">email</string>
+    <string name="send_reset_link">SEND RESET LINK</string>
+    <string name="lock">lock</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">Register</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="etcCycling"> \tThe concept behind Cycling Club is that, due to increasing pollution, we a part of TEZPUR UNIVERSITY ADVENTURE SPORTS CLUB
+        wants to aware the general public about the increasing global warming and create a responsive attitude towards the Mother Nature.
+        So here we come with exciting cycling activities where you can race, enjoy your weekend and involve yourself in the adventure.</string>
+    <string name="etcHiking"> \tHikers Club is designed for the enthusiast and adventure sports lover who are ready to take up any challenge.
+        Quest Adventure is coming up with overnight and day trekking packages in and around Bangalore which is amusing and very challenging.</string>
+    <string name="etcBiking"> \tBikers enthusiast, love for speed, passionate and daring people must join this club. We will take you to the nature trails,
+        the rugged terrains, beautiful highways and to the best motorable roads which you have always dreamt about. You must experience with us and you
+        will meet some thrilling bikers for life.</string>
+
+    <string name="etcIntroduction">\tThe Tezpur University Astronomy Club was established in the year 2006. From then, several Astronomy Activities have been
+        taking place to popularize astronomy in the region. In the year 2017, the Tezpur University Observatory (TUO) was upgraded with sophisticated telescopes
+        and several backend instruments to further boost up the Astronomy Activities.\n\tThe astronomy club is active in its activities. Weekly astronomy and astrophotography
+        sessions are organized every Thursday evening. The club also plays a major role at organizing the largest astronomy event of North East India during INSCIGNIS, the
+        festival of the school of sciences, with support from students of different departments of the SoS.\n\tPresently, Tezpur University Astronomy Club and TU Observatory has
+        been recognized as an IUCAA-ICARD center for scientific and outreach activities.</string>
+
+    <string name="etcWeekly1">Join us at our weekly session from 7 - 8 pm in the evening at TU Astro Club.
+        \n\tEveryone, from within and outside the university, irrespective of their subject of study are welcome to join us for a weekly dose of astronomy and sky watching on Thursdays.
+        \n\tThe sky has a lot more to offer than just science.</string>
+    <string name="etcAstrophotography1">\tWe have started with weekly astrophotography sessions every Thursday from 8pm to 9pm.
+    \n\tThere are no prerequisites for the session and students from every semester and every department can join.
+    \n\tAt the end of the course, certificates will be awarded to all the consistent participants.</string>
+
+    <string name="dance_info">\tAn art form that uses the body as its instrument but is ruled by the mind and the heart.
+    \n\tThe main motto of this club is to promote dance amongst people of all ages, to give a platform to those who have passion and love for dance.</string>
+
+    <string name="book_info">\tThe motto of the club is to find the like minded people who are interested in reading books and share our experiences with reading a particular book.
+        We also want to explore more genres and learn about different good books and a club makes this motive much easier with the help from suggestions and general reviews from various readers.</string>
+
+    <string name="art_info">\tTezpur University Fine Arts Club aims at encouraging students to express their thoughts, feelings and creativity through various art forms.
+        Our club intends to uphold the relative merits of the students and to explore the world of creativity and bring laurels to the institution by constant motivation and encouragement.
+        \n\tFine arts club is for everyone who wants to be associated with other artisians and grow together. We focus on bringing out the inner potential of every artists by providing them
+        the platform and exposure.</string>
+
+    <string name="film_info">\tWe are delighted to introduce a film club named Film Sector Club (TUFSC) with a vision to expose its young members to a variety of cinema from across the world.
+    The objective of the club is to aid the young minds to arrive at an understanding of cinema – from its history to the more contemporary trends.
+    \n\tEvery screening will be associated with an introduction to the film and a discussion session post the film show. These discussions, debates and exchanges of ideas on cinema will
+        enable students to learn about themselves and the world around them. The engaging process hopes to embrace other art forms as well, which would help the students discover and develop
+        the diverse latent talents that have so far remained trapped within them. </string>
+    <string name="name">Name</string>
+
+
+</resources>
